@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   text: {
     marginTop: 8,
     fontSize: 16,
-    fontFamily: "Roboto",
+    fontFamily: "Roboto-Regular",
     color: "#BDBDBD",
     lineHeight: 19,
   },
@@ -56,7 +56,6 @@ const styles = StyleSheet.create({
   btn: {
     width: "100%",
     height: 50,
-    backgroundColor: "#F6F6F6",
     borderRadius: 100,
     justifyContent: "center",
     alignItems: "center",
@@ -64,8 +63,7 @@ const styles = StyleSheet.create({
   },
 
   btnText: {
-    fontFamily: "Roboto",
-    color: "#BDBDBD",
+    fontFamily: "Roboto-Regular",
     fontSize: 16,
   },
 
@@ -85,6 +83,34 @@ const styles = StyleSheet.create({
     height: "30%",
     alignItems: "center",
   },
+
+  postPhotoWrap: {
+    // flex: 1,
+    height: 240,
+    overflow: "hidden",
+    backgroundColor: "#F6F6F6",
+    borderColor: "#E8E8E8",
+    borderStyle: "solid",
+    borderWidth: 1,
+    borderRadius: 8,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  cameraBtn: {
+    width: 60,
+    height: 60,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 30,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  flipContainer: {
+    position: "absolute",
+    top: 10,
+    right: 10,
+  },
 });
 
 export const {
@@ -98,4 +124,7 @@ export const {
   btn,
   trashBtn,
   btnText,
+  postPhotoWrap,
+  cameraBtn,
+  flipContainer,
 } = styles;

@@ -69,7 +69,7 @@ export const RegScreen = () => {
     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
       <View style={container}>
         <ImageBackground
-          source={require("../../assets/Images/photoBackground.jpg")}
+          source={require("../../../assets/Images/photoBackground.jpg")}
           resizeMode="stretch"
           style={backgroundImage}
         />

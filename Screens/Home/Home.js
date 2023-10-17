@@ -2,11 +2,11 @@ import { TouchableOpacity, StyleSheet, View } from "react-native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Feather, AntDesign } from "@expo/vector-icons";
 
-import { CreatePostScreen } from "../CreatePostScreen";
-import { PostScreen } from "../PostScreen/PostScreen";
+import { CreatePostScreen } from "../tabs/CreatePostScreen";
+import { PostScreen } from "../tabs/PostScreen/PostScreen";
 
 import { header, headerTitle, plusIcon, iconsTab } from "./HomeStyles";
-import { ProfileScreen } from "../ProfileScreen";
+import { ProfileScreen } from "../tabs/ProfileScreen";
 
 const Tabs = createBottomTabNavigator();
 

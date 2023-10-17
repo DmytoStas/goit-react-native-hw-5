@@ -18,51 +18,32 @@ const styles = StyleSheet.create({
     height: screenHeight,
   },
 
-  regContainer: {
-    position: "relative",
-
+  authContainer: {
     width: screenWidth,
-    paddingTop: 82,
     paddingHorizontal: 16,
     paddingBottom: 16,
 
+    fontFamily: "Roboto-Regular",
+    fontSize: 16,
     backgroundColor: "#fff",
     borderTopLeftRadius: 25,
     borderTopRightRadius: 25,
   },
 
-  avatarContainer: {
-    position: "absolute",
-    top: -60,
-    alignSelf: "center",
-  },
-
-  avatar: {
-    width: 120,
-    height: 120,
-    backgroundColor: "#f6f6f6",
-    borderRadius: 16,
-  },
-
-  addAvatarBtn: {
-    position: "absolute",
-    right: -12,
-    bottom: 14,
-  },
-
   title: {
-    marginBottom: 26,
+    marginTop: 32,
+    marginBottom: 32,
 
     color: "#212121",
-    fontFamily: "Roboto",
+    fontFamily: "Roboto-Medium",
     fontStyle: "normal",
-    fontWeight: "500",
     fontSize: 30,
     lineHeight: 35,
     textAlign: "center",
   },
 
   input: {
+    fontFamily: "Roboto-Regular",
     height: 50,
     paddingLeft: 16,
 

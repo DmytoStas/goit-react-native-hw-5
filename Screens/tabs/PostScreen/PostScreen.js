@@ -1,9 +1,10 @@
 import { View, Text, StyleSheet } from "react-native";
+import { PostItem } from "../../../components/PostItem";
 
 export const PostScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Posts will be here</Text>
+      <PostItem />
     </View>
   );
 };
@@ -12,6 +13,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "#fff",
+    paddingHorizontal: 10,
   },
   title: {
     marginTop: 44,

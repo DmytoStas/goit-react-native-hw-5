@@ -1,8 +1,8 @@
-export { LoginScreen } from "./LoginScreen";
-export { PostScreen } from "./PostScreen/PostScreen";
-export { RegScreen } from "./RegScreen";
-export { CreatePostScreen } from "./CreatePostScreen";
+export { LoginScreen } from "./auth/LoginScreen";
+export { PostScreen } from "./tabs/PostScreen/PostScreen";
+export { RegScreen } from "./auth/RegScreen";
+export { CreatePostScreen } from "./tabs/CreatePostScreen";
 export { Home } from "./Home";
-export { ProfileScreen } from "./ProfileScreen";
-export { CommentsScreen } from "./CommentScreen";
-export { MapScreen } from "./MapScreen";
+export { ProfileScreen } from "./tabs/ProfileScreen";
+export { CommentsScreen } from "./nested/CommentScreen";
+export { MapScreen } from "./nested/MapScreen";

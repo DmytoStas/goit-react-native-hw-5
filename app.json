@@ -22,7 +22,13 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff",
         "softwareKeyboardLayoutMode": "pan"
-      }
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyDhR1OJn4ktG-v-xVkYb_AipnwA9k8mpxk"
+        }
+      },
+      "package": "com.dmytro_stas.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"

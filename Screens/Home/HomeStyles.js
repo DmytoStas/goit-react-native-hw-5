@@ -8,8 +8,7 @@ const styles = StyleSheet.create({
   },
   headerTitle: {
     color: "#212121",
-    fontFamily: "Roboto",
-    fontWeight: "500",
+    fontFamily: "Roboto-Medium",
     fontSize: 17,
   },
   plusIcon: {

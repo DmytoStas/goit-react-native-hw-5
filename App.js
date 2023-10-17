@@ -1,18 +1,28 @@
 import "react-native-gesture-handler";
-import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
+import { useFonts } from "expo-font";
 import {
   LoginScreen,
   RegScreen,
-  PostScreen,
-  CreatePostScreen,
   Home,
+  MapScreen,
+  CommentsScreen,
 } from "./Screens";
 
 const MainStack = createStackNavigator();
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    "Roboto-Regular": require("./assets/fonts/Roboto-Regular.ttf"),
+    "Roboto-Medium": require("./assets/fonts/Roboto-Medium.ttf"),
+    "Roboto-Bold": require("./assets/fonts/Roboto-Bold.ttf"),
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <NavigationContainer>
       <MainStack.Navigator initialRouteName="Reg">
@@ -37,8 +47,24 @@ export default function App() {
           name="Home"
           component={Home}
         />
+
+        <MainStack.Screen
+          options={{
+            title: "Comments",
+            headerTitleAlign: "center",
+          }}
+          name="Comments"
+          component={CommentsScreen}
+        />
+        <MainStack.Screen
+          options={{
+            title: "Map",
+            headerTitleAlign: "center",
+          }}
+          name="Map"
+          component={MapScreen}
+        />
       </MainStack.Navigator>
-      {/* <StatusBar style="auto" /> */}
     </NavigationContainer>
   );
 }
